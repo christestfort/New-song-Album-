@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            border: solid 4px blue; /By default the border color is same as that of the text/
+            /* border-collapse: collapse; */
+            padding: 20px;
+            background-color: coral;
+            margin: 20px;
+        }
+        td{
+            border-left: solid 2px red;/Inner border collapse over the outer border if both are of the same size(same pixels)/
+            border-bottom: dashed 2px green;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        td:hover{
+            background-color:darkblue;
+            color: crimson;
+        }
+        th:hover{
+            background-color: black;
+            color: crimson;
+        }
+        th{
+            border: solid 2px red;
+            background-color: orange;
+        }
+        caption{
+            background-color: green;
+            border: solid 3px;
+        }
+        div{
+            padding: 20px;
+            background-color:rgb(1, 112, 14) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Students Table</caption>
+            <thead>
+                <tr>
+                    <th>Sr.no.</th>
+                    <th>Name</th>
+                    <th>Roll no.</th>
+                    <th>Address</th>
+                    <th colspan="2">contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">Ram</td>
+                    <td rowspan="2">101</td>
+                    <td>LPU</td>
+                    <td rowspan="2">92039XXXXX</td>
+                    <td rowspan="2">89897XXXXX</td>
+                </tr>
+                <tr>
+                    <td>BH-1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sham</td>
+                    <td>102</td>
+                    <td>Jalandhar</td>
+                    <td>90303XXXXX</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Aman</td>
+                    <td>103</td>
+                    <td>Ludhiana</td>
+                    <td>90833XXXXX</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mohit</td>
+                    <td>108</td>
+                    <td>Mohali</td>
+                    <td>83939XXXXX</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</body>
+</html>

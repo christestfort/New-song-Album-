@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            border: solid 4px rgb(234, 234
+            background-color: rgb(255, 249, 246);
+            margin: 20px;
+        }
+        td{
+            border-left: solid 2px red;/*Inner border collapse over the outer border if both are of the same size(same pixels)*/
+            border-bottom: dashed 2px green;
+            background-color: rgb(244, 249, 251);
+            padding: 10px;
+        }
+        td:hover{
+            background-color:darkblue;
+            color: crimson;
+        }
+        th:hover{
+            background-color: black;
+            color: crimson;
+        }
+        th{
+            border: solid 2px rgb(15, 14, 14);
+            background-color: rgb(255, 255, 255);
+        }
+        caption{
+            background-color: green;
+            border: solid 3px;
+        }
+        div{
+            padding: 20px;
+            background-color:rgb(241, 248, 246) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            
+            <thead>
+                <tr>
+                   
+                    <th colspan="4"> Electronics </th>
+                    <th colspan="3">furniture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Stage</td>
+                    <td rowspan="2">Supplier</td>
+                    <td rowspan="2"> Status</td>
+                    <td rowspan="2">Stage</td>
+                    <td rowspan="2">Supplier</td>
+                    
+                </tr>
+                <tr>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Manufacturing</td>
+                    <td>Electroparts Ltd.</td>
+                    <td>completed</td>
+                    <td rowspan="6">assemble</td>
+                    <td> Woodcrafters</td>
+                    <td>In progress</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">TechMakers</td>
+                    <td rowspan="2"> Delayed</td>
+                    <td rowspan="4">Homeplus Assembly</td>
+                    <td rowspan="2">On hold</td>
+                    <td rowspan="2">Awaiting Parts</td>
+                    <thead>
+
+                        
+                    </thead>
+                </tr>
+                <tr>
+                    <td rowspan="2">packaging</td>
+                    <td rowspan="2">safePack</td>
+                    <td rowspan="2">pending</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</body>
+</html>

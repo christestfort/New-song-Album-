@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            border: solid 1px rgb(19, 19, 37); 
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+        }
+        td{
+            border-left: solid 2px rgb(35, 28, 28);/*Inner border collapse over the outer border if both are of the same size(same pixels)*/
+            border-bottom: ashed 2px rgb(32, 41, 32);
+            background-color: rgb(248, 252, 254);
+            padding: 10px;
+        }
+        td:hover{
+            background-color:rgb(252, 236, 236);
+            color: rgb(249, 226, 15);
+            
+        }
+        th:hover{
+
+            background-color: rgb(35, 32, 32);
+            color: rgb(14, 13, 13);
+        }
+        th{
+            border: solid 2px rgb(255, 252, 252);
+            background-color: brown;
+        }
+        caption{
+            background-color: green;
+            border: solid 3px;
+
+        }
+        div{
+            padding: 20px;
+            background-color:rgb(255, 255, 255) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            
+            <thead>
+                <tr>
+            
+                    
+                    
+                    <th colspan="4">Electronics</th> </th>
+                    <th colspan="4">contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Stage</td>
+                    <td rowspan="2">Supplier</td>
+                    <td rowspan="2">Status </td>
+                    <td rowspan="2"> Stage</td>
+                    <td rowspan="2">supplier</td>
+                </tr>
+                <tr>
+                    <td>Status </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Manufacturing</td>
+                    <td>Electroparts Ltd.</td>
+                    <td>completed</td>
+                    <td rowspan="3">assemble</td>
+                    <td> Woodcrafters</td>
+                    <td>In progress</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">TechMakers</td>
+                    <td rowspan="2"> Delayed</td>
+                    <td rowspan="3">Homeplus Assembly</td>
+                    <td rowspan="2">On hold</td>
+                    <td rowspan="2">Awaiting Parts</td
+                </tr>
+                <thead>
+                    
+                </thead>
+                <tr>
+
+                    <td rowspan="2">packaging</td>
+                    <td rowspan="2">safePack</td>
+                    <td rowspan="2">pending</td>
+                    <td rowspan="2">Awaiting Parts</td>
+            </thead>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</body>
+</html>
